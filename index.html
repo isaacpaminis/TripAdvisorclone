@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Advisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <!--Navbar-->
+
+        <div class="navbar__section0">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar__section1">
+            <img src="./images/wordmark.svg" alt="">
+        </div>
+        <div class="navbar__section2">
+            <button class="navbar__button">Discover</button>
+            <button class="navbar__button">Review</button>
+            <a class="navbar__button link" href="">More</a>
+        </div>
+        <div class="navbar__section3">
+            <button class="navbar__button icons"><svg viewBox="0 0 24 24" width="20px" height="20px" class="d Vb UmNoP"
+                    aria-hidden="true">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.31 9.82h4.178c-.069-1.591-.356-2.993-.766-4.017-.237-.593-.501-1.023-.756-1.293-.211-.223-.38-.3-.5-.32h-.133c-.12.02-.289.097-.5.32-.255.27-.519.7-.756 1.293-.41 1.024-.697 2.426-.767 4.017m-.374-5.14q-.135.272-.252.566C8.194 6.472 7.88 8.07 7.81 9.82H5.055a6.39 6.39 0 0 1 3.88-5.14m2.301-1.989a7.883 7.883 0 0 0-7.726 7.88 7.88 7.88 0 0 0 7.884 7.885c.584 0 .871-.014 1.11-.074.124-.031.172-.049.213-.064.058-.02.099-.036.312-.073l-.26-1.477a4 4 0 0 0-.628.159c-.031.007-.132.029-.743.029-.121 0-.313-.06-.566-.327-.255-.27-.519-.699-.756-1.292-.41-1.025-.697-2.426-.767-4.017h4.203a4.7 4.7 0 0 1-.113.843 6 6 0 0 1-.112.413l-.012.04-.004.016c-.034.114-.089.298-.1.478l1.498.088v.006s.007-.035.044-.161l.012-.04c.038-.126.09-.298.136-.505.072-.313.134-.698.152-1.178h2.734a4.2 4.2 0 0 1-.195.949c-.055.16-.11.28-.166.403l-.004.01-.01.02c-.046.101-.132.288-.161.486l1.484.219-.005.026s.012-.032.057-.13l.008-.018c.056-.123.137-.3.216-.529.168-.49.31-1.168.31-2.186a7.88 7.88 0 0 0-7.72-7.879 2 2 0 0 0-.325 0m2.626 1.99q.134.271.252.565c.49 1.226.805 2.824.875 4.574h2.75a6.38 6.38 0 0 0-3.877-5.14M8.94 16.466a8 8 0 0 1-.256-.573c-.49-1.227-.805-2.824-.875-4.574H5.055a6.39 6.39 0 0 0 3.885 5.147">
+                    </path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.489 12.343h-8.75v6.648h5.255l3.495 2.325zm-1.5 1.5v4.674l-1.542-1.026H13.24v-3.648z">
+                    </path>
+                </svg>
+                <p>| INR</p>
+            </button>
+            <button class="navbar__button green">Sign in</button>
+        </div>
+
+
+    </nav>
+
+    <!-- Search bar -->
+    <div class="container">
+        <div class="search">
+            <div class="search__desc">
+                <h1>Where to?</h1>
+            </div>
+            <div class="categories">
+                <ul>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.889 3.542a.25.25 0 0 0-.278 0l-8 5.333a.25.25 0 0 0-.111.208v10.465c0 .138.112.25.25.25h16a.25.25 0 0 0 .25-.25V9.083a.25.25 0 0 0-.111-.208zm-1.11-1.248a1.75 1.75 0 0 1 1.942 0l8 5.333c.487.325.779.871.779 1.456v10.465a1.75 1.75 0 0 1-1.75 1.75h-16A1.75 1.75 0 0 1 2 19.548V9.083c0-.585.292-1.131.78-1.456z">
+                        </path>
+                    </svg>
+                    <li>
+                        <p>Search all</p>
+                    </li>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M22 12.5V20h-4.5v-3h-11v3H2V6.25a2.25 2.25 0 0 1 4.5 0v6.25zM5 6.25a.75.75 0 0 0-1.5 0V18.5H5v-3h14v3h1.5V14H5z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 10.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11 7h5.6a5.4 5.4 0 0 1 5.4 5.4V14H11zm9.241 4A3.9 3.9 0 0 0 16.6 8.5h-4.1v4h8v-.1a3.9 3.9 0 0 0-.259-1.4">
+                        </path>
+                    </svg>
+                    <li>Hotels</li>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.56 7.5H3.75a.25.25 0 0 0-.25.25v10c0 .138.112.25.25.25h16.5a.25.25 0 0 0 .25-.25v-10a.25.25 0 0 0-.25-.25h-3.81l-2-2H9.56zM8.94 4h6.12l2 2h3.19c.966 0 1.75.784 1.75 1.75v10a1.75 1.75 0 0 1-1.75 1.75H3.75A1.75 1.75 0 0 1 2 17.75v-10C2 6.784 2.784 6 3.75 6h3.19z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M12 9.25a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5M7.75 12a4.25 4.25 0 1 1 8.5 0 4.25 4.25 0 0 1-8.5 0">
+                        </path>
+                    </svg>
+                    <li>Things to do</li>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" class="d Vb egaXP UmNoP" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.051 6.549v.003l1.134 1.14 3.241-3.25.003-.002 1.134 1.136-3.243 3.252 1.134 1.14a1 1 0 0 0 .09-.008c.293-.05.573-.324.72-.474l.005-.006 2.596-2.603L22 8.016l-2.597 2.604a3.73 3.73 0 0 1-1.982 1.015 4.3 4.3 0 0 1-3.162-.657l-.023-.016-.026-.018-1.366 1.407 8.509 8.512L20.219 22l-.002-.002-6.654-6.663-2.597 2.76-7.3-7.315C1.967 8.948 1.531 6.274 2.524 4.198c.241-.504.566-.973.978-1.386l8.154 8.416 1.418-1.423-.039-.045c-.858-1.002-1.048-2.368-.62-3.595a4.15 4.15 0 0 1 .983-1.561L16 2l1.135 1.138-2.598 2.602-.047.045c-.16.151-.394.374-.433.678zM3.809 5.523c-.362 1.319-.037 2.905 1.06 4.103L10.93 15.7l1.408-1.496zM2.205 20.697 3.34 21.84l4.543-4.552-1.135-1.143z">
+                        </path>
+                    </svg>
+                    <li>Restaurants</li>
+                </ul>
+                <form>
+                    <input type="text" placeholder="Places to go ,things to do,Hotels...">
+                    <button>Search</button>
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- Picture box -->
+
+        <div class="picturebox">
+            <div class="picturebox__container">
+
+                <div class="picturebox__s1">
+
+                    <img src="./images/T1.jpeg" alt="">
+                </div>
+                <div class="picturebox__divider">
+                </div>
+                <div class="picturebox__s2">
+                    <h1>Book experiences on the go</h1>
+                    <p>Browse 400,000+ experiences and book with us.</p>
+                    <button>Get the app</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- interest -->
+        <div class="interest">
+            <h2 class="interest__title">Find things to do by interest</h2>
+            <p>Whatever you're into, we've got it</p>
+            <div class="interest__container">
+                <div class="interest__images">
+                    <img src="./images/outdoors.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Outdoors</h2>
+                </div>
+                <div class="interest__images">
+                    <img src="./images/food.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Food</h2>
+                </div>
+                <div class="interest__images">
+                    <img src="./images/culture.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Culture</h2>
+                </div>
+                <div class="interest__images">
+                    <img src="./images/water.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Water</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- recommendation -->
+        <div class="recommendation">
+            <h2 class="recommendation__container__title">Explore experiences near Bengaluru</h2>
+            <p>Can't-miss picks near you</p>
+            <div class="recommendation__container">
+                <div class="recommendation__images">
+                    <img src="./images/i1.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Old Bangalore Historical Walk thro Palace, Temples, Fort & Market</h3>
+                    <p> 5.0 🟢🟢🟢🟢🟢 </p>
+                </div>
+                <div class="recommendation__images">
+                    <img src="./images/i2.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Best of Mysore, UNESCO Somnathpur Temple & Srirangapatna Day Tour</h3>
+                    <p> 4.7 🟢🟢🟢🟢 </p>
+                </div>
+                <div class="recommendation__images">
+                    <img src="./images/i3.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Bangalore in a Day: Private Guided Full-Day Sightseeing Tour</h3>
+                    <p> 4.0 🟢🟢🟢🟢 </p>
+                </div>
+                <div class="recommendation__images">
+                    <img src="./images/i4.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Wild Life Jeep Safari Tour at Bannerghatta with Private Transfer</h3>
+                    <p> 5.0 🟢🟢🟢🟢🟢 </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Foundation-->
+        <div class="foundation">
+            <div class="foundation__container">
+
+                <div class="foundation__s1">
+                    <img src="./images/f1.jpg" alt="">
+                </div>
+
+
+                <div class="foundation__s2 center">
+                    <div class="foundation__s3"><img width="24" height="auto"
+                            src="https://static.tacdn.com/img2/brand_refresh_2025/logos/logo.svg" alt="Tripadvisor">
+                        <p> Tripadvisor Foundation</p>
+                    </div>
+                    <h3>Show some love to small businesses</h3>
+                    <p>Donate to Kiva.org today to provide loans to local entrepreneurs and the Tripadvisor Foundation
+                        will match it, up to $150,000 USD collectively. Terms apply.
+                    </p>
+                    <button class="navbar__button green">Donate Now</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- suggestion -->
+        <div class="suggestion">
+            <h2 class="suggestion__container__title">Eyes peeled. Mind blown.</h2>
+            <p>Head out on a whale-watching tour</p>
+            <div class="suggestion__container">
+                <div class="suggestion__images">
+                    <img src="./images/s1.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Maui: Whale Watching Cruise with Open Bar from Ka'anapali Beach</h3>
+                    <p> 5.0 🟢🟢🟢🟢🟢 </p>
+                </div>
+                <div class="suggestion__images">
+                    <img src="./images/s2.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>SMALL GROUP Whale Watch | Cabo San Lucas | Biologist | FREE Pics</h3>
+                    <p> 5.0 🟢🟢🟢🟢🟢 </p>
+                </div>
+                <div class="suggestion__images">
+                    <img src="./images/s3.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Whale Watching Eco-Adventure from Costa Adeje</h3>
+                    <p> 5.0 🟢🟢🟢🟢🟢 </p>
+                </div>
+                <div class="suggestion__images">
+                    <img src="./images/s4.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h3>Waikiki, Oahu 2-Hour Whale Watching: Guaranteed Sightings</h3>
+                    <p> 5.0 🟢🟢🟢🟢🟢 </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Iconicplaces -->
+        <div class="iconic">
+            <h2 class="iconic__title">Find things to do by interest</h2>
+            <p>Whatever you're into, we've got it</p>
+            <div class="iconic__container">
+                <div class="iconic__images">
+                    <img src="./images/p1.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Rome,Italy</h2>
+                </div>
+                <div class="iconic__images">
+                    <img src="./images/p2.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Paris,France</h2>
+                </div>
+                <div class="iconic__images">
+                    <img src="./images/p3.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>Las Vegas,NV</h2>
+                </div>
+                <div class="iconic__images">
+                    <img src="./images/p4.jpg" alt="">
+                    <div class="interest__overlay"></div>
+                    <h2>London,UK</h2>
+                </div>
+            </div>
+        </div>
+        <!-- Foundation -->
+        <div class="foundation">
+            <div class="foundation__container">
+
+                <div class="foundation__s1">
+                    <img class="Wanderlab" src="./images/w1.jpg" alt="">
+                </div>
+
+
+                <div class="foundation__s2 center">
+                    <div class="foundation__s3"><img width="24" height="auto"
+                            src="https://static.tacdn.com/img2/brand_refresh_2025/logos/logo.svg" alt="Tripadvisor">
+                        <p> Sponsored by Wanderlab</p>
+                    </div>
+                    <h3>Watch The Wanderer</h3>
+                    <p>Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video
+                    </p>
+                    <button class="navbar__button green">Learn more</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Choice -->
+    <div class="choice">
+        <div class="container">
+            <div class="choice__container">
+                <div class="choice__s1">
+                    <img src="./images/ch1.svg" alt="">
+                    <h1>Travellers'Choice Awards Best of the Best</h1>
+                    <h3>Among our top 1% of places, stays, eats, and experiences—decided by you.</h3>
+                    <button class="navbar__button white">See the winners</button>
+                </div>
+                <img class="choice__s2" src="./images/ch2.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__one">
+                <div class="footer__one-s1">
+                    <h3>About Tripadvisor</h3>
+                    <p>About Us</p>
+                    <p>Press</p>
+                    <p>Resources and Policies</p>
+                    <p>Careers</p>
+                    <p>Trust & Safety</p>
+                    <p>Contact us</p>
+                    <p>Tripadvisor Technology Blog</p>
+                </div>
+                <div class="footer__one-s2">
+                    <h3>Explore</h3>
+                    <p>Write a review</p>
+                    <p>Add a Place</p>
+                    <p>Join </p>
+                    <p>Travellers' Choice</p>
+                    <p>Help Centre</p>
+                    <p>Travel Stories</p>
+                </div>
+
+                <div class="footer__one-s3">
+                    <h3>Do Business With Us</h3>
+                    <p>Owners & DMO/CVB</p>
+                    <p>Business Advantage</p>
+                    <p>Sponsored Placements</p>
+                    <p>Advertise with Us</p>
+                    <p>Access our Content API</p>
+                    <p></p>
+                    <h3>Get The App</h3>
+                    <p>iPhone App</p>
+                    <p>Android App</p>
+                </div>
+                <div class="footer__one-s4"></div>
+                <div class="footer__one-s5">
+                    <h3>Tripadvisor Sites</h3>
+                    <p>Book tours and attraction tickets on <a href="">Viator</a></p>
+                </div>
+
+            </div>
+            <div class="footer__two">
+                <img src="./images/logo.svg" alt="">
+                <p>&copy 2026 Tripadvisor LLC All rights reserved.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
