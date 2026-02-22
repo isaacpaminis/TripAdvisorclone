@@ -153,10 +153,7 @@ body {
 
 
 }
-.categories ul li{
-    font-size: 16px;
-    font-weight: bold;
-}
+
 .categories ul :hover{
   transform: scale(1.08);
 }
